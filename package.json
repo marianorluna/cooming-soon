@@ -11,8 +11,6 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "cf-typegen": "wrangler types",
-    "deploy": "astro build && wrangler pages deploy",
     "prepare": "node -e \"if(process.env.CI){process.exit(0)}\" || husky"
   },
   "dependencies": {
@@ -29,8 +27,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "typescript": "^5.9.3",
-    "wrangler": "^4.40.3"
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
     "*": "pnpm run format"
